@@ -1,0 +1,59 @@
+<html lang="en-GB" prefix="og: http://ogp.me/ns#">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Base Frame</title>
+  	<link rel="stylesheet" type="text/css" href="css/normalise.css"/>
+    <link rel="stylesheet" type="text/css" href="css/base.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+    <link rel="stylesheet" media="print" href="css/print.css"/>
+
+</head>
+<body>
+
+
+<main>
+  <div class="container">
+        
+        <div class="form">
+<form id="ajax-contact" method="post" action="assets/mailer.php">
+    <div class="field">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+    </div>
+   
+   <div class="opt">
+      <label>
+        <input type="radio" name="RadioGroup" value="1">
+        <p>1</p></label>
+      <label>
+        <input type="radio" name="RadioGroup" value="2">
+        <p>2</p></label>
+        
+        </div>
+
+    <div class="field">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+    </div>
+
+    <div class="field">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Leave a message..." required></textarea>
+    </div>
+
+    <div class="field">
+        <button type="submit">Send</button>
+    </div>
+</form>
+<div id="form-messages"></div>
+</div>
+   
+   
+    </div>
+</main>
+
+
+
+</body>
+</html>
