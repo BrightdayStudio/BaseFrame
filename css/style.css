@@ -234,16 +234,16 @@ color: #fff;
 @media (min-width: 1200px) {}
 
 
-section.panel img {width:100%;}
+section.card img {width:100%;}
 section .txt {margin-right:3em;}
 .thumbnails img, .block img {width:100%; height:auto;}
 .cr {margin-top:10em;}
 
 @media (min-width: 800px) {
-	section.panel img {display:none;}
+	section.card img {display:none;}
 }
 @media (max-width: 800px) {
-	section.panel .txt {margin-right:0; background-color: rgba(20,100,80,1);}
+	section.card .txt {margin-right:0; background-color: rgba(20,100,80,1);}
 }
 
 
