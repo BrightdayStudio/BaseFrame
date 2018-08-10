@@ -1,0 +1,169 @@
+
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.btn,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    display: inline-block;
+    /*height: 38px;*/
+    padding: 0 30px;
+    color: #fff;
+    text-align: center;
+    font-size: 1em;
+    line-height: 38px;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    border-radius: 4px;
+    cursor: pointer;
+    box-sizing: border-box;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+	/*background-color: transparent;*/
+    background: #666;
+    outline: 0;
+    border: 0;
+}
+
+.btn:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover{
+    color: #eee;
+    background: #242322;
+    outline: 0;
+}
+
+
+@media (max-width: 750px) {
+    .btn {
+        margin: 0.2em 0;
+    }
+}
+
+
+/* Forms
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+form {}
+
+
+input,
+textarea,
+select,
+fieldset {
+  margin-bottom: 1.5em; }
+
+input,
+textarea,
+select {
+  	padding: 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+    width: 100%;
+    background-color: #fff;
+    box-shadow: none;
+    box-sizing: border-box;
+    border: 2px solid #c0c1b3;
+    border-radius: 4px;
+	-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+
+input,
+select {
+    box-sizing: border-box;
+    transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+}
+
+input, textarea, select {
+	margin-bottom: 1em;
+	border: 2px solid #c0c1b3;
+	}
+
+
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    margin: 8px 0;
+    min-height: 65px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border: 2px solid #16b6b4;
+}
+
+
+fieldset {
+    padding: 0;
+    margin: 8px 0;
+    border-width: 0;
+}
+
+fieldset .field-group:first-of-type{margin-right: 20px;}
+
+fieldset .field-group{
+	width: calc(50% - 10px);
+    float: left;
+    }
+
+input[type="checkbox"]{
+    appearance: checkbox;
+    -webkit-appearance: checkbox;
+    -moz-appearance: checkbox;
+	}
+input[type="radio"]{
+    appearance: radio;
+    -webkit-appearance: radio;
+    -moz-appearance: radio;
+	}
+
+input[type="submit"] {width:auto;float:right; border:0; margin:10px 0;}
+input:disabled {opacity: 0.5; cursor: not-allowed;}
+
+form label {display:inline-block;}
+form.stacked label{display:block;}
+
+input[type=text], input[type=email] {}
+input[type="password"] {
+	-webkit-text-security: none !important;
+}
+
+
+#response {
+    padding: 20px;
+    background-color: var(--color1);
+    color: #333;
+    transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+     /*display: none;*/
+}
+
+@media (max-width: 750px) {
+    form {
+        margin: 0;
+        padding: 0;
+		width:100%;;
+    }
+    form div {
+        padding-top: 0;
+    }
+    label {
+        margin: 20px 0 0;
+    }
+
+	fieldset .field-group{
+	width: 100%;
+    float: none;
+    }
+}

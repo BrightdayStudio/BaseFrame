@@ -1,0 +1,44 @@
+
+/* Flex structure
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.flex > * { box-sizing: border-box; }
+
+.flex.colx3 > * {
+    flex: 1 1 30%;}
+
+.flex.colx2 > * {
+    flex: 1 0 45%;}
+
+
+.flex.colx2 > *:first-child {margin-right:20px;}
+.flex.colx2 > *:last-child {margin-left:20px;}
+
+@media (max-width: 750px) {
+    .flex:not(header) {
+        -webkit-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    }
+    .flex > *,
+    .flex.colx3 > *,
+    .flex.colx2 > * {
+        flex: 1 1 auto;
+
+    }
+
+    .flex.colx2 > *:last-child, .flex.colx2 > *:first-child {margin:0;}
+    .flex.colx2 > div {
+        padding: 0;
+    }
+}

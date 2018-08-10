@@ -13,15 +13,26 @@ html {
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
     margin: 0;
+    font-size: 100%;
 }
 
 
+* {
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
 
-body {
-  margin: 0;
-  font-size: 16px; 
-  line-height: 1.6;
-}
+body{
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        vertical-align: baseline;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+
 
 
 /**
@@ -45,12 +56,13 @@ menu {
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
-p, h1, h2, h3, h4, h5, h6 {margin:0; padding:0;}
 
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
+
+
 
 /* Grouping content
    ========================================================================== */
@@ -80,20 +92,13 @@ figure {
  */
 
 hr {
+    -moz-box-sizing: content-box;
   box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
   overflow: visible; /* 2 */
 }
 
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
 
-pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
 
 /* Text-level semantics
    ========================================================================== */
@@ -106,6 +111,11 @@ pre {
 a {
   background-color: transparent; /* 1 */
   -webkit-text-decoration-skip: objects; /* 2 */
+}
+
+a:active,
+a:hover {
+  outline: 0;
 }
 
 /**
@@ -125,7 +135,7 @@ abbr[title] {
 
 b,
 strong {
-  font-weight: inherit;
+  font-weight: bolder;
 }
 
 /**
@@ -144,10 +154,16 @@ strong {
 
 code,
 kbd,
-samp {
+samp,
+pre{
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
+    margin:0;
+    word-wrap: normal;
 }
+
+
+
 
 /**
  * Add the correct font style in Android 4.3-.
@@ -171,7 +187,7 @@ mark {
  */
 
 small {
-  font-size: 80%;
+  font-size: 70%;
 }
 
 /**
@@ -222,6 +238,7 @@ audio:not([controls]) {
 
 img {
   border-style: none;
+    border: 0;
     display: inline-block;
 }
 
@@ -472,10 +489,24 @@ template {
 
 
 
-/* Self Clearing Goodness */
+/* Self Clearing Goodness - clear floats */
 
+.clearfix {
+    overflow: auto;
+}
+
+.clearfix:before,
 .clearfix:after{
     content: "";
     display: table;
     clear: both;
 }
+
+
+::selection,
+::-moz-selection {
+  text-shadow: none;
+  background: rgba(65,131,196,0.4);
+}
+
+
