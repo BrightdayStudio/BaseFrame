@@ -128,7 +128,7 @@ input[type="radio"]{
 	}
 
 input[type="submit"] {width:auto;float:right; border:0; margin:10px 0;}
-input:disabled {opacity: 0.5; cursor: not-allowed;}
+input:disabled {opacity: 0.3; cursor: not-allowed;}
 
 form label {display:inline-block;}
 form.stacked label{display:block;}
