@@ -1,21 +1,5 @@
-:root {
-    --link: #4183c4;
-    --hover: #0099cc;
-    --color1: #eee;
-    --color2:#ccc;
-    --highlight: #bfc121;
-    --priority: #0078e7;
-    --success: rgb(28, 184, 65);
-    --error: rgb(202, 60, 60);
-    --warning: rgb(223, 117, 20);
-    --secondary:rgb(66, 184, 221);
-}
-
-
-
-
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: var(--typeface);
     color: #333;
 	background-color:#fff;
     font-size:18px;
@@ -95,7 +79,10 @@ p {
 
 
 strong, b {
-  font-weight: bold;
+}
+
+em {
+    font-style: normal;
 }
 
 h1,

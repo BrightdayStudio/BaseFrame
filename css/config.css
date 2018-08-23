@@ -1,0 +1,37 @@
+:root {
+    --link: #4183c4;
+    --hover: #0099cc;
+    --color1: #eee;
+    --color2:#ccc;
+    --highlight: #bfc121;
+    --priority: #0078e7;
+    --success: rgb(28, 184, 65);
+    --error: rgb(202, 60, 60);
+    --warning: rgb(223, 117, 20);
+    --secondary:rgb(66, 184, 221);
+
+    --typeface: 'Roboto', sans-serif; /*Helvetica, Arial, sans-serif;*/
+}
+
+
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(/assetsfonts/roboto/Roboto-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style:normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(/assetsfonts/roboto/Roboto-black.ttf) format('truetype');
+    font-weight: 900;
+    font-style:normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(/assetsfonts/roboto/Roboto-light.ttf) format('truetype');
+    font-weight: 300;
+    font-style:normal;
+}
