@@ -1,3 +1,11 @@
+hr {
+    margin:10rem 0;
+    display: block;
+    border:none;
+    border-bottom: 1px solid #ccc;
+    height:0;
+}
+
 .page p,
 .page blockquote,
 .page ul,
@@ -12,7 +20,41 @@
     overflow: auto;
 }
 
+h1{
+    font-family: var(--typeface);
+    font-size: 6rem;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.04em;
+}
+h2{
+    font-family: var(--typeface);
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1;
+}
 
+
+h3{
+    font-family: var(--typeface);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+h4{
+    font-family: var(--typeface);
+    font-size: 1.3rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+h5, h6{
+    font-family: var(--typeface);
+    font-size: 1.1rem;
+    font-weight: 900;
+    line-height: 1;
+}
 
 .page dl {
   padding: 0;
@@ -155,15 +197,17 @@ pre {
 }
 
 
+.btn.priority {background-color:var(--priority); color:#fff;}
 
-
-.btn.priority {background-color:var(--priority)}
-.btn.success {background-color:var(--success)}
-.btn.error {background-color:var(--error)}
-.btn.warning {background-color:var(--warning)}
-.btn.secondary {background-color:var(--secondary)}
+.priority {background-color:var(--priority); color:#fff; padding:1rem;}
+.success {background-color:var(--success); color:#fff; padding:1rem;}
+.error {background-color:var(--error); color:#fff; padding:1rem;}
+.warning {background-color:var(--warning); color:#fff; padding:1rem;}
+.secondary {background-color:var(--secondary); color:#fff; padding:1rem;}
 
 
 
 .side {background-color:#fff;}
 .disabled {opacity: 0.3; cursor: not-allowed;}
+
+
